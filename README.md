@@ -32,4 +32,18 @@ Landing page profissional para Gestor de Tráfego Pago.
    ```
 
 ---
+
+## 🔄 Automação CI/CD (GitHub Actions)
+
+Este repositório já vem configurado com um workflow para deploy automático. Para ativar:
+
+1. Vá em **Settings > Secrets and variables > Actions** no seu repositório GitHub.
+2. Adicione os seguintes Secrets:
+   - `SSH_HOST`: O IP da sua VPS.
+   - `SSH_USER`: Normalmente `root`.
+   - `SSH_PRIVATE_KEY`: Sua chave SSH privada (gerada com `ssh-keygen`).
+
+Sempre que você fizer um `git push`, o site será atualizado automaticamente na VPS.
+
+---
 Desenvolvido por **DevHub Core**.
