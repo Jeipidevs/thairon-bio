@@ -99,9 +99,22 @@
 
     <!-- Hero -->
     <section class="relative pt-32 pb-20 px-6 min-h-screen flex flex-col items-center justify-center text-center overflow-hidden">
-        <div class="hero-glow -top-20 -left-20"></div>
-        <div class="hero-glow bottom-0 -right-20" style="background: radial-gradient(circle, rgba(249, 115, 22, 0.1) 0%, transparent 70%);"></div>
+        <!-- Background Hero Image -->
+        <div class="absolute inset-0 -z-20 opacity-20 bg-cover bg-center grayscale" style="background-image: url('./hero.png');"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/80 to-transparent -z-10"></div>
         
+        <!-- Profile Image Small -->
+        <div class="relative mb-8 reveal">
+            <div class="w-32 h-32 rounded-full border-4 border-primary-500/30 overflow-hidden shadow-2xl relative z-10 mx-auto">
+                <img src="./image.png" alt="Tairon Domingo" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute -bottom-2 -right-2 w-10 h-10 bg-accent rounded-full flex items-center justify-center border-4 border-surface z-20">
+                <i class="fas fa-check text-xs text-white"></i>
+            </div>
+            <!-- Glow Effect -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-primary-500/20 blur-2xl rounded-full -z-10"></div>
+        </div>
+
         <div class="reveal active">
             <span class="px-4 py-1 rounded-full border border-primary-500/30 text-primary-500 text-xs font-bold uppercase tracking-widest mb-6 inline-block">Growth & Traffic Specialist</span>
             <h1 class="font-heading text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
