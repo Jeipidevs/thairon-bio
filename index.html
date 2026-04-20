@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tairon Domingo | Gestor de Tráfego Pago</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#4f1c02",
+                        "error-container": "#93000a",
+                        "surface": "#131313",
+                        "error": "#ffb4ab",
+                        "tertiary": "#ffb596",
+                        "on-surface": "#e5e2e1",
+                        "primary": "#a7c8ff",
+                        "primary-container": "#002c59",
+                        "primary-fixed": "#d5e3ff",
+                        "primary-fixed-dim": "#a7c8ff",
+                        "on-surface-variant": "#c4c6d0",
+                        "on-tertiary-fixed-variant": "#713619",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "secondary-fixed": "#e5e2e1",
+                        "surface-container": "#201f1f",
+                        "outline-variant": "#43474f",
+                        "on-primary-container": "#7194cd",
+                        "surface-container-low": "#1c1b1b",
+                        "secondary-container": "#474746",
+                        "on-secondary-container": "#b7b5b4",
+                        "surface-container-high": "#2a2a2a",
+                        "inverse-primary": "#3a5f94",
+                        "inverse-on-surface": "#313030",
+                        "surface-bright": "#3a3939",
+                        "surface-variant": "#353534",
+                        "on-tertiary-fixed": "#360f00",
+                        "tertiary-fixed-dim": "#ffb596",
+                        "inverse-surface": "#e5e2e1",
+                        "outline": "#8d909a",
+                        "on-background": "#e5e2e1",
+                        "on-secondary": "#313030",
+                        "on-error": "#690005",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-error-container": "#ffdad6",
+                        "on-primary": "#003061",
+                        "on-secondary-fixed-variant": "#474746",
+                        "surface-tint": "#a7c8ff",
+                        "secondary": "#c8c6c5",
+                        "surface-dim": "#131313",
+                        "on-tertiary": "#552005",
+                        "on-tertiary-container": "#cd805d",
+                        "on-primary-fixed": "#001b3c",
+                        "background": "#131313",
+                        "surface-container-highest": "#353534",
+                        "on-primary-fixed-variant": "#1f477b",
+                        "tertiary-fixed": "#ffdbcd"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(53, 53, 52, 0.4);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#131313]/40 backdrop-blur-xl shadow-[0_48px_48px_-12px_rgba(167,200,255,0.06)]">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-high ring-1 ring-primary/20">
+<img alt="Tairon Domingo Profile" class="w-full h-full object-cover" data-alt="Tairon Domingo profile avatar" src="https://lh3.googleusercontent.com/aida/ADBb0uhd0NQYoOMAd54o3t_F09dARZX9mo3DHtJMMDhHckhtIULIPQFx3iieFW-utn2FSKoOGUQIEEkwsb_BsHUOTt8-I2rKBQl5Rfg_EKFAOt5iD1KdooCoDgEOjcwhvHaqTI1MdMV7tiqUNUtKyyJQ3h19WawIoznYFooJ-1cld6tv8Ol5_lpkG9JoBjEgDXttV_b40cQZtYW9iz1C0j8UfMFGszbfOc9LJqpof6kcf5AAAWayqKr3g7ucwF-u6FwbpANMoN1XfhrU"/>
+</div>
+<span class="text-lg font-extrabold tracking-tighter text-[#e5e2e1]">TAIRON DOMINGO</span>
+</div>
+<span class="material-symbols-outlined text-[#a7c8ff] scale-95 active:scale-90 transition-transform cursor-pointer" data-icon="menu">menu</span>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto">
+<!-- Hero Section / Profile Header -->
+<section class="relative mb-16 overflow-hidden">
+<div class="flex flex-col gap-6">
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Tairon Domingo" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Professional portrait of Tairon Domingo against a vibrant orange and black background" src="https://lh3.googleusercontent.com/aida/ADBb0uhd0NQYoOMAd54o3t_F09dARZX9mo3DHtJMMDhHckhtIULIPQFx3iieFW-utn2FSKoOGUQIEEkwsb_BsHUOTt8-I2rKBQl5Rfg_EKFAOt5iD1KdooCoDgEOjcwhvHaqTI1MdMV7tiqUNUtKyyJQ3h19WawIoznYFooJ-1cld6tv8Ol5_lpkG9JoBjEgDXttV_b40cQZtYW9iz1C0j8UfMFGszbfOc9LJqpof6kcf5AAAWayqKr3g7ucwF-u6FwbpANMoN1XfhrU"/>
+<div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-surface via-surface/40 to-transparent">
+<p class="font-label text-xs uppercase tracking-[0.2em] text-primary mb-2">TRAFFIC MANAGER</p>
+<h1 class="text-5xl font-extrabold tracking-tighter text-on-surface leading-none mb-1">Tairon Domingo</h1>
+<p class="text-on-surface-variant font-medium">Gestor de Tráfego Pago</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Metrics / Highlights (Strategic Architect vibe) -->
+<section class="grid grid-cols-2 gap-4 mb-16">
+<div class="bg-surface-container-low p-6 rounded-xl border-l-2 border-primary/30">
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">ROI de Campanha</p>
+<h3 class="text-3xl font-bold text-primary tracking-tighter">450%+</h3>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl border-l-2 border-tertiary/30">
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Investimento Gerenciado</p>
+<h3 class="text-3xl font-bold text-tertiary tracking-tighter">$1M+</h3>
+</div>
+</section>
+<!-- Skills Section: Bento Grid Inspired -->
+<section class="mb-16">
+<div class="flex justify-between items-end mb-8">
+<h2 class="text-2xl font-extrabold tracking-tight">Especialidades</h2>
+<div class="h-[1px] flex-grow mx-4 mb-2 bg-outline-variant/20"></div>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<!-- Skill 1 -->
+<div class="bg-surface-container-high p-6 rounded-xl flex items-start gap-5 hover:bg-surface-bright transition-colors group">
+<div class="bg-surface-container-highest p-3 rounded-xl group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-2xl" data-icon="ads_click">ads_click</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Google Ads Expert</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Estratégias de Pesquisa, Display e Vídeo otimizadas para conversão.</p>
+</div>
+</div>
+<!-- Skill 2 -->
+<div class="bg-surface-container-high p-6 rounded-xl flex items-start gap-5 hover:bg-surface-bright transition-colors group">
+<div class="bg-surface-container-highest p-3 rounded-xl group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-2xl" data-icon="hub">hub</span>
+</div>
+<div><h4 class="font-bold text-on-surface">Especialista em Meta Ads</h4><p class="text-sm text-on-surface-variant leading-relaxed">Ecossistemas avançados de segmentação para Facebook e Instagram.</p></div>
+</div>
+<!-- Skill 3 -->
+<div class="bg-surface-container-high p-6 rounded-xl flex items-start gap-5 hover:bg-surface-bright transition-colors group">
+<div class="bg-surface-container-highest p-3 rounded-xl group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-2xl" data-icon="data_exploration">data_exploration</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Análise de Dados &amp; ROI</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Precision measurement and data-driven scaling decisions.</p>
+</div>
+</div>
+<!-- Skill 4 -->
+<div class="bg-surface-container-high p-6 rounded-xl flex items-start gap-5 hover:bg-surface-bright transition-colors group">
+<div class="bg-surface-container-highest p-3 rounded-xl group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-2xl" data-icon="filter_alt">filter_alt</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Estratégia de Funil</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">End-to-end customer journey design for maximum LTV.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Links Section: Premium Cards -->
+<section class="mb-16">
+<h2 class="text-2xl font-extrabold tracking-tight mb-8">Conectar</h2>
+<div class="flex flex-col gap-3">
+<a class="group bg-gradient-to-br from-primary to-primary-container p-[1px] rounded-full overflow-hidden" href="https://www.instagram.com/thairondomingos/">
+<div class="bg-surface-container-high rounded-full px-6 py-4 flex items-center justify-between group-hover:bg-transparent transition-all">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary transition-colors" data-icon="alternate_email">alternate_email</span>
+<span class="font-bold text-on-surface group-hover:text-on-primary transition-colors">Instagram</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-primary transition-colors" data-icon="arrow_outward">arrow_outward</span>
+</div>
+</a>
+<a class="group relative overflow-hidden bg-surface-container-high rounded-full px-6 py-4 flex items-center justify-between hover:bg-surface-bright transition-all border border-primary/10" href="https://wa.me/5545998258711">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="chat">chat</span>
+<span class="font-bold text-on-surface">WhatsApp (Consultoria)</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label text-[10px] uppercase tracking-tighter text-primary">Disponível</span>
+</div>
+</a>
+</div>
+</section>
+<!-- Featured Service / CTA -->
+<section class="mb-20">
+<div class="glass-card p-8 rounded-xl border border-outline-variant/10 relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-primary/10 blur-[60px] rounded-full"></div>
+<h3 class="text-2xl font-extrabold mb-4">Comece a Escalar Hoje</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Transforme seu orçamento de anúncios em uma máquina de crescimento de alta performance. Gestão profissional para resultados sérios.</p>
+<button class="w-full py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold rounded-full text-center uppercase tracking-widest text-xs">
+                    Agendar Consultoria Estratégica
+                </button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full bg-[#1c1b1b]/80 backdrop-blur-2xl z-50 rounded-t-xl flex justify-around items-center px-4 py-3 pb-safe shadow-none">
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-[#a7c8ff] to-[#002c59] text-[#003061] rounded-full px-5 py-1 transition-all tap-highlight-none active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="Ads_Click">ads_click</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-medium">Portfolio</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#c4c6d0] opacity-60 hover:opacity-100 transition-opacity tap-highlight-none active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="Hub">hub</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-medium">Conectar</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#c4c6d0] opacity-60 hover:opacity-100 transition-opacity tap-highlight-none active:scale-95" href="#">
+<span class="material-symbols-outlined" data-icon="Data_Exploration">data_exploration</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-medium">Serviços</span>
+</a>
+</nav>
+<!-- Background Decoration -->
+<div class="fixed top-0 left-0 w-full h-full -z-10 opacity-10 pointer-events-none">
+<div class="absolute top-[10%] left-[-5%] w-[60%] aspect-square bg-primary/20 blur-[120px] rounded-full"></div>
+<div class="absolute bottom-[20%] right-[-10%] w-[50%] aspect-square bg-tertiary/20 blur-[100px] rounded-full"></div>
+</div>
+</body></html>
